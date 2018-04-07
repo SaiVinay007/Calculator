@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google</title>
+	<style>
+	body{
+		background-color: blue;
+		
+}
+#first{
+	color: grenn;
+
+	.college{
+		font-size: 100 px
+	}
+
+	} 
+	</style>
+
+	
+</head>
+<body>
+<center>
+	<h1>calculator</h1>
+	<p class="college">my college is owesome</p>
+	<input id="a"></input>
+	<input id="b"></input><br>
+	<button style ="background-color: red" onclick="add()">add</button>
+	<button onclick="substract()">substract</button>
+	<button onclick="multiply()">multiply</button>
+	<button onclick="divide()">divide</button>
+	<div id="ans"></div>
+</center>
+
+
+</body>
+
+<script >
+	function add(){
+		var a =parseInt(document.getElementById('a').value);
+		var b =parseInt(document.getElementById('b').value);
+		console.log(a);
+		document.getElementById("ans").innerHTML=a+b;
+	}
+	function multiply(){
+		var a =parseInt(document.getElementById('a').value);
+		var b =parseInt(document.getElementById('b').value);
+		console.log(a);
+		document.getElementById("ans").innerHTML=a*b;
+	}
+	function substract(){
+		var a =parseInt(document.getElementById('a').value);
+		var b =parseInt(document.getElementById('b').value);
+		console.log(a);
+		document.getElementById("ans").innerHTML=a-b;
+	}
+	function divide(){
+		var a =parseInt(document.getElementById('a').value);
+		var b =parseInt(document.getElementById('b').value);
+		console.log(a);
+		document.getElementById("ans").innerHTML=a/b;
+	}
+	
+</script>
+</html>
